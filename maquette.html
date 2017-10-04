@@ -1,0 +1,304 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="maquette.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="materialize/js/materialize.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<header>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Clean Street</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="sass.html">Nous contacter</a></li>
+                <li><a href="badges.html">Signaler</a></li>
+                <li><a href="badges.html">Optimiser</a></li>
+                <li><a href="collapsible.html">Sensibiliser</a></li>
+            </ul>
+        </div>
+    </nav>
+
+</header>
+<body>
+
+
+       <div id="myCarousel" class="carousel slide" data-ride="carousel">
+           <!-- Wrapper for slides -->
+           <div class="carousel-inner">
+               <div class="item active">
+                   <img src="images/entete.png" class="img-responsive" style="width:100%;">
+                   <div class="carousel-caption">
+                       <a href="#signalerDechet" class="waves-effect waves-light btn-large">Signalez un déchet</a>
+                   </div>
+               </div>
+           </div>
+
+       </div>
+
+       <div class="container">
+           <div class="row partie">
+               <div class="col s12 titrePrincipale">
+                   <h5>Signalez un lieu sale  </h5>
+               </div>
+               <div class="col s12">
+                   <div class="col s12 m6 ">
+                       <div class="input-field col s12">
+                           <textarea id="textarea1" class="materialize-textarea"></textarea>
+                           <label for="textarea1">Remarque : </label>
+                       </div>
+                       <div class="col s12">
+                           <label class="label" for="test5">Indice de propreté : </label>
+                           <p class="range-field">
+                               <input type="range" id="test5" min="0" max="10" />
+                           </p>
+                       </div>
+                       <div class="file-field input-field col s12">
+                           <div class="btn">
+                               <span>Photo</span>
+                               <input type="file" multiple>
+                           </div>
+                           <div class="file-path-wrapper">
+                               <input class="file-path validate" type="text" placeholder="Upload one or more files">
+                           </div>
+                       </div>
+                       <div class="col s12 submit">
+                           <a class="waves-effect waves-light btn">Signaler !</a>
+                       </div>
+
+                   </div>
+                   <div class="col s12 m6 carte">
+                        <div class="col s12" id="map"></div>
+                   </div>
+               </div>
+           </div>
+
+           <div class="row partie">
+               <div class="col s12 titrePrincipale">
+                   <h5>Etat de votre ville   </h5>
+               </div>
+               <div class="col s12">
+                   <div class="col s12 m6 ">
+                       <h5 class="titreSecondaire">Les plus pollués :</h5>
+                       <ol>
+                           <li class="collection-item"><div>Moulins<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+                           <li class="collection-item"><div>Bois blanc<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+                           <li class="collection-item"><div>Wazemmes<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+                           <li class="collection-item"><div>Lille centre<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+                           <li class="collection-item"><div>FBG de Béthune<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+                           <li class="collection-item"><div>Five<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+                       </ol>
+                   </div>
+                   <div class="col s12 m6 carte">
+                       <iframe src="https://www.google.com/maps/d/embed?mid=1TWh5GYl4qwYlknrXrHOx1VNqahY" width="100%" height="300"></iframe>
+                   </div>
+               </div>
+           </div>
+
+
+
+       <div class="row" id="signalerDechet">
+           <div class="col s12 m6 partie" style="padding-left: 0px;padding-right: 0px;">
+               <div class="col s12 titrePrincipale">
+                   <h5>Signalez un déchet  </h5>
+               </div>
+               <div class="col s12 carte">
+                   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d20256.987333769142!2d3.13231805!3d50.6062442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1505981822250" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+               </div>
+               <div class="col s12 submit">
+                   <a class="waves-effect waves-light btn">Signaler !</a>
+               </div>
+           </div>
+       </div>
+
+       <div class="row partie">
+           <div class="col s12 titrePrincipale">
+               <h5>Résultat de votre recherche </h5>
+           </div>
+           <div class="col s12">
+               <div class="col s6 m3 lieu">
+                    <div class="col s12 image" style="padding-left: 0px;padding-right: 0px;">
+                        <img src="images/aimg.jpg" class="responsive-img">
+                    </div>
+                    <div class="col s12 quartier">
+                        <span>Five</span>
+                    </div>
+                   <div class="col s12 description">
+                       <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that focuses on User Experience.</p>
+                   </div>
+                   <div class="col s12" style="padding-left: 0px;padding-right: 0px;">
+                       <button class="btn btn-block yaller" type="submit" name="action">Y aller ! </button>
+                    </div>
+               </div>
+
+               <div class="col s6 m3 lieu">
+                   <div class="col s12 image" style="padding-left: 0px;padding-right: 0px;">
+                       <img src="images/img2.jpg" class="responsive-img">
+                   </div>
+                   <div class="col s12 quartier">
+                       <span>Moulins</span>
+                   </div>
+                   <div class="col s12 description">
+                       <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that focuses on User Experience.</p>
+                   </div>
+                   <div class="col s12" style="padding-left: 0px;padding-right: 0px;">
+                       <button class="btn btn-block yaller" type="submit" name="action">Y aller ! </button>
+                   </div>
+               </div>
+
+               <div class="col s6 m3 lieu">
+                   <div class="col s12 image" style="padding-left: 0px;padding-right: 0px;">
+                       <img src="images/aimg.jpg" class="responsive-img">
+                   </div>
+                   <div class="col s12 quartier">
+                       <span>Bois Blanc</span>
+                   </div>
+                   <div class="col s12 description">
+                       <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that focuses on User Experience.</p>
+                   </div>
+                   <div class="col s12" style="padding-left: 0px;padding-right: 0px;">
+                       <button class="btn btn-block yaller" type="submit" name="action">Y aller ! </button>
+                   </div>
+               </div>
+
+               <div class="col s6 m3 lieu">
+                   <div class="col s12 image" style="padding-left: 0px;padding-right: 0px;">
+                       <img src="images/aimg.jpg" class="responsive-img">
+                   </div>
+                   <div class="col s12 quartier">
+                       <span>Wazemmes</span>
+                   </div>
+                   <div class="col s12 description">
+                       <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that focuses on User Experience.</p>
+                   </div>
+                   <div class="col s12" style="padding-left: 0px;padding-right: 0px;">
+                       <button class="btn btn-block yaller" type="submit" name="action">Y aller ! </button>
+                   </div>
+               </div>
+
+           </div>
+       </div>
+    </div>
+
+</body>
+<footer>
+    <div class="row partie">
+
+
+            <div class="col s4">
+                <div class="center promo promo-example">
+                    <span class="glyphicon glyphicon-trash"></span>
+                    <p class="promo-caption">Optimiser</p>
+                    <p class="light center">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components.</p>
+                </div>
+            </div>
+            <div class="col s4">
+                <div class="center promo promo-example">
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                    <p class="promo-caption">Signaler</p>
+                    <p class="light center">By utilizing elements and principles of Material Design, we were able to create a framework that focuses on User Experience.</p>
+                </div>
+            </div>
+            <div class="col s4">
+                <div class="center promo promo-example">
+                    <span class="glyphicon glyphicon-user"></span>
+                    <p class="promo-caption">Sensibiliser</p>
+                    <p class="light center">We have provided detailed documentation as well as specific code examples to help new users get started.</p>
+                </div>
+            </div>
+
+    </div>
+</footer>
+
+
+</html>
+<script>
+    function getWindowHeight() {
+        var windowHeight=0;
+        if (typeof(window.innerHeight)=='number') {
+            windowHeight=window.innerHeight;
+        } else {
+            if (document.documentElement&& document.documentElement.clientHeight) {
+                windowHeight = document.documentElement.clientHeight;
+            } else {
+                if (document.body&&document.body.clientHeight) {
+                    windowHeight=document.body.clientHeight;
+                }
+            }
+        }
+        return windowHeight;
+    }
+
+    ny=getWindowHeight();
+    var taille = document.getElementById("myCarousel");
+    var hauteur = ny-64;
+    taille.style.minHeight = hauteur+'px';
+
+</script>
+
+<script>
+    // Note: This example requires that you consent to location sharing when
+    // prompted by your browser. If you see the error "The Geolocation service
+    // failed.", it means you probably did not give permission for the browser to
+    // locate you.
+
+    function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 50.6062442, lng: 3.132318},
+            zoom: 15
+        });
+        var infoWindow = new google.maps.InfoWindow({map: map});
+
+        // Try HTML5 geolocation.
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function(position) {
+                var pos = {
+                    lat: position.coords.latitude,
+                    lng: position.coords.longitude
+                };
+
+                infoWindow.setPosition(pos);
+                infoWindow.setContent('Location found.');
+                map.setCenter(pos);
+            }, function() {
+                handleLocationError(true, infoWindow, map.getCenter());
+            });
+        } else {
+            // Browser doesn't support Geolocation
+            handleLocationError(false, infoWindow, map.getCenter());
+        }
+    }
+
+    function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+        infoWindow.setPosition(pos);
+        infoWindow.setContent(browserHasGeolocation ?
+            'Error: The Geolocation service failed.' :
+            'Error: Your browser doesn\'t support geolocation.');
+    }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRE007XGmvUwlz5hKvbBDA3URhxmqBAHM&callback=initMap">
+</script>
+<style>
+    /* Always set the map height explicitly to define the size of the div
+     * element that contains the map. */
+    #map {
+        height: 300px;
+    }
+
+</style>
